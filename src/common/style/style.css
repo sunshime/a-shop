@@ -1,0 +1,79 @@
+.aheader {
+  padding: 0.85333333rem;
+  padding-top: 0.64rem;
+  padding-bottom: 0.21333333rem;
+  height: 2.13333333rem;
+  display: flex;
+  background-color: skyblue;
+}
+.aheader .left {
+  height: 1.70666667rem;
+  line-height: 1.49333333rem;
+  width: 2.13333333rem;
+}
+.aheader .left img {
+  padding-top: 0.10666667rem;
+  height: 1.28rem;
+  width: 1.28rem;
+}
+.aheader .left i {
+  font-size: 2.09066667rem;
+  margin-top: -0.21333333rem;
+  font-weight: 400;
+  color: #999;
+}
+.aheader .search {
+  flex: 1;
+  height: 1.49333333rem;
+  border-radius: 0.64rem;
+  overflow: hidden;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+.aheader .search .searchtext {
+  width: 1.28rem;
+  padding-left: 0.53333333rem;
+  color: #999;
+  font-weight: 400;
+}
+.aheader .search input,
+.aheader .search span {
+  flex: 1;
+  height: 1.49333333rem;
+  line-height: 1.70666667rem;
+  font-size: 0.384rem;
+  color: #666;
+  padding-left: 0.21333333rem;
+}
+.aheader .search i {
+  font-size: 1.17333333rem;
+  text-align: center;
+  color: #ccc;
+  font-weight: 400;
+  line-height: 1.49333333rem;
+}
+.aheader .right i {
+  padding-top: 0.064rem;
+  width: 0.85333333rem;
+  padding-left: 0.85333333rem;
+  font-size: 1.49333333rem;
+  text-align: center;
+  color: #666;
+  font-weight: normal;
+}
+.aheader .right span {
+  display: block;
+  padding: 0.53333333rem;
+  padding-top: 0.10666667rem;
+  padding-bottom: 0.10666667rem;
+  margin-left: 0.85333333rem;
+  margin-top: 0.064rem;
+  font-size: 0.85333333rem;
+  text-align: center;
+  color: #666;
+  font-weight: normal;
+  border: 1px solid #ccc;
+  border-radius: 1.06666667rem;
+  background-color: #fff;
+}

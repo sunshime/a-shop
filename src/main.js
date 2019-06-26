@@ -8,6 +8,7 @@ import Axios from 'axios'
 import Vuex from 'vuex'
 import 'vant/lib/index.css'
 import store from './store/index'
+import 'font-awesome/css/font-awesome.min.css'
 Vue.config.productionTip = false
 // 引入Axios
 Vue.prototype.$http = Axios
