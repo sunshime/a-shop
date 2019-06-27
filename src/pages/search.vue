@@ -32,7 +32,5 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-@import url('../common/style/public.css');
 @import url('../common/style/app.css');
 </style>
-

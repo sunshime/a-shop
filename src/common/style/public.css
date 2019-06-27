@@ -52,10 +52,6 @@ a:visited {
 }
 input[type=password],
 input[type=text],
-input {
-  outline: 0 none;
-  border: 0 none;
-}
 textarea {
   resize: none;
   outline: 0;
@@ -84,4 +80,8 @@ ul {
 }
 .fr {
   float: right;
+}
+input {
+  outline: 0 none;
+  border: 0 none;
 }

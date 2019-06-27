@@ -22,6 +22,6 @@ export default {
   left: 0;
   width: 100%;
   height: 100vh;
-  background-color: #eee;
+  background-color: #f8f8f8;
 }
 </style>

@@ -2,10 +2,12 @@
   <div class="home">
     <!-- 头部 -->
     <Aheader :searchStatus="status" @search="search" @getSearch="getSearch"></Aheader>
+    <Scroll></Scroll>
   </div>
 </template>
 <script>
 import Aheader from '../components/aheader'
+import Scroll from '../components/scroll'
 export default {
   name:'home',
   data(){
@@ -14,7 +16,8 @@ export default {
     }
   },
   components:{
-    Aheader
+    Aheader,
+    Scroll
   },
   methods:{
     search(val){
@@ -29,7 +32,6 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-@import url('../common/style/public.css');
 @import url('../common/style/app.css');
 </style>
 
