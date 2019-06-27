@@ -172,3 +172,7 @@ input {
   border-radius: 1.06666667rem;
   background-color: #fff;
 }
+.navscroll {
+  width: 100%;
+  font-size: 0.85333333rem;
+}

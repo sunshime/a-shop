@@ -6,9 +6,12 @@ import router from './router'
 import Vant from 'vant'
 import Axios from 'axios'
 import Vuex from 'vuex'
-import 'vant/lib/index.css'
+import './common/style/index.css'
 import store from './store/index'
 import 'font-awesome/css/font-awesome.min.css'
+// 提示框
+import { Toast } from 'vant';
+Vue.use(Toast);
 Vue.config.productionTip = false
 // 引入Axios
 Vue.prototype.$http = Axios
