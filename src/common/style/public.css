@@ -22,7 +22,8 @@ body {
   line-height: 1.5;
   font-family: 'Microsoft Yahei', 'simsun', 'arial', 'tahoma';
   color: #333;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 h1,
 h2 {

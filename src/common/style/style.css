@@ -3,8 +3,9 @@
   padding-top: 0.64rem;
   padding-bottom: 0.21333333rem;
   height: 2.13333333rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  background-color: skyblue;
 }
 .aheader .left {
   height: 1.70666667rem;
@@ -23,13 +24,16 @@
   color: #999;
 }
 .aheader .search {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 1.49333333rem;
   border-radius: 0.64rem;
   overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   background-color: #fff;
-  border: 1px solid #ccc;
 }
 .aheader .search .searchtext {
   width: 1.28rem;
@@ -39,7 +43,9 @@
 }
 .aheader .search input,
 .aheader .search span {
-  flex: 1;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
   height: 1.49333333rem;
   line-height: 1.70666667rem;
   font-size: 0.384rem;

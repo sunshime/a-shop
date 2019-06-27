@@ -4,15 +4,16 @@
     <div class="left">
       <img src="../common/images/scan.png" v-if="!searchStatus" alt>
       <i class="fa fa-angle-left" v-if="searchStatus" @click="back"></i>
+      <slot></slot>
     </div>
-    <div class="search">
+    <div class="search" @click="getSearch">
       <i class="fa fa-search searchtext"></i>
       <span v-if="!searchStatus">小米手环4</span>
-      <input type="text" placeholder="小米手环4" v-if="searchStatus" @input="search">
+      <input type="text" placeholder="小米手环4" v-if="searchStatus" v-model="keyword">
     </div>
     <div class="right">
       <i class="fa fa-qrcode" v-if="!searchStatus"></i>
-      <span v-if="searchStatus">搜 索</span>
+      <span v-if="searchStatus" @click="searchText">搜 索</span>
     </div>
   </div>
 </template>
@@ -21,26 +22,34 @@ export default {
   name: "aheader",
   data() {
     return {
-      searchStatus: true,
       keyword:''
     };
   },
-  watch:{
-    
+  props: {
+    searchStatus: {
+      type: Boolean
+    }
   },
-  methods:{
-    back(){
+  watch: {
+    searchStatus(value){
+      this.searchStatus = value;
+    },
+    keyword(val){
+      this.$emit('search', val)
+    }
+
+  },
+  methods: {
+    back() {
       // 返回上一级
-      console.log('返回上一级');
+      console.log("返回上一级");
       this.$router.back();
     },
-    search(e){
-      this.keyword = e.data;
-      console.log(this.keyword,'this.keyword')
-      let that = this;
-      // let timer = setTimeout(() => {
-      //   this.getRequire();  // 对应的请求
-      // }, 3000);
+    getSearch(){
+      this.$emit('getSearch');
+    },
+    searchText(){
+      this.$emit('searchText');
     }
   }
 };

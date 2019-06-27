@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <!-- 头部 -->
-    <Aheader :searchStatus="status" @search="search" @getSearch="getSearch"></Aheader>
+    <Aheader :searchStatus="status" @search="search" @searchText="searchText"></Aheader>
   </div>
 </template>
 <script>
@@ -10,7 +10,8 @@ export default {
   name:'home',
   data(){
     return {
-      status:false
+      status:true,
+      keyWords: ''
     }
   },
   components:{
@@ -19,11 +20,13 @@ export default {
   methods:{
     search(val){
       console.log(val,'val----');
-      
+      this.keyWords = val;
     },
-    getSearch(){
-      console.log('跳转到搜索页面')
-      this.$router.push('search');      
+    searchText(){
+        console.log('搜索');
+        console.log(this.keyWords);
+        // 发送请求 请求对应的数据
+
     }
   }
 }
