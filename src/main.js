@@ -10,8 +10,8 @@ import './common/style/index.css'
 import store from './store/index'
 import 'font-awesome/css/font-awesome.min.css'
 // 提示框
-import { Toast } from 'vant';
-Vue.use(Toast);
+import { Toast,Tab, Tabs, PullRefresh } from 'vant';
+Vue.use(Toast).use(Tab).use(Tabs).use(PullRefresh);
 Vue.config.productionTip = false
 // 引入Axios
 Vue.prototype.$http = Axios

@@ -6,9 +6,8 @@
   </div>
 </template>
 <script>
-import Vue from "vue";
-import { Tab, Tabs } from "vant";
-Vue.use(Tab).use(Tabs);
+// import Vue from "vue";
+
 export default {
   name: "navscroll",
   data() {
